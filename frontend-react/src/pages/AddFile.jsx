@@ -26,6 +26,16 @@ function AddFile() {
       setTimeout(()=> {setError('')}, 3000)
       return
     }
+    if (accesskey.length < 8) {
+      setError("access key minimum 8 characters")
+      setTimeout(()=> {setError('')}, 3000)
+      return
+    }
+    if (accesskey.length > 20) {
+      setError("access key maximum characters are 20")
+      setTimeout(()=> {setError('')}, 3000)
+      return
+    }
     if (!title) {
       setError("Title is required")
       setTimeout(() => {setError('')}, 3000)
