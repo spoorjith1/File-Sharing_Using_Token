@@ -18,5 +18,5 @@ urlpatterns = [
     
     path('shared-file/', UploadViews.ViewAndDownloadSharedFileView.as_view(), name='shared_file'),
     
-    path('file/delete/<int:id>/', UploadViews.DeleteUploadView.as_view(), name='delete_upload'),
+    path('file/delete/<int:pk>/', UploadViews.DeleteUploadView.as_view(), name='delete_upload'),
 ]
