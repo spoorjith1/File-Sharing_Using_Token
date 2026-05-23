@@ -48,7 +48,7 @@ class GetUploadView(generics.RetrieveAPIView):
         return Uploads.objects.filter(user=self.request.user)
 
 
-class EditAccessKey(generics.RetrieveUpdateAPIView):
+class EditAccessKeyView(generics.RetrieveUpdateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = EditAccessKeySerializer
     

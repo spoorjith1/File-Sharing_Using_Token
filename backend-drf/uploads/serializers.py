@@ -39,8 +39,8 @@ class ListUploadsSerializer(serializers.ModelSerializer):
 class EditAccessKeySerializer(serializers.ModelSerializer):
     class Meta:
         model = Uploads
-        fields = ['id', 'title', 'file', 'created_at', 'share_token', 'access_key']
-        read_only_fields = ['title', 'file', 'share_token', 'created_at']
+        fields = ['id', 'title', 'file', 'created_at', 'share_token', 'access_key', 'file_type']
+        read_only_fields = ['title', 'file', 'share_token', 'created_at', 'file_type']
         
 
 class AccessSharedFileSerializer(serializers.Serializer):
