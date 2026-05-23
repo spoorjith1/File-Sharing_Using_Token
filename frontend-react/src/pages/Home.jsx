@@ -42,7 +42,7 @@ function Home() {
 
   return (
     <div className='page-container home-page'>
-      <h1>Up Cloud</h1>
+      <h1 className='up-cloud'>Up Cloud</h1>
       <div className='share-container'>
         <form onSubmit={handleSubmit} className='link-form' >
           <h3 className='share-title'>Paste the Shared Link</h3>

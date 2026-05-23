@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import UserProfile from './pages/UserProfile';
 import AddFile from './pages/AddFile';
+import EditAccess from './pages/EditAccess';
 
 function AppRoutes() {
   const { isLoggedIn } = useContext(AuthContext);
@@ -25,6 +26,7 @@ function AppRoutes() {
       <Route path="/home" element={ <PrivateRoute><Home /></PrivateRoute>} />
       <Route path="/profile" element={ <PrivateRoute><UserProfile /></PrivateRoute> } />
       <Route path="/add_file" element={ <PrivateRoute><AddFile /></PrivateRoute> } />
+      <Route path="/edit/access_key/:id" element={<PrivateRoute><EditAccess /></PrivateRoute>} />
     </Routes>
     <Footer />
     </main>

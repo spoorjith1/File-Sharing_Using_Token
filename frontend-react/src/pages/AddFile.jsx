@@ -64,6 +64,7 @@ function AddFile() {
 
   return (
     <div className='page-container add-file-page'>
+      <h1 className='up-cloud'>Up Cloud</h1>
       <div className='upload-container'>
         <h3 className='add-file-title'>Add File</h3>
         <form onSubmit={handleSubmit} className='upload-form'>
